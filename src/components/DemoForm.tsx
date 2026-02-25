@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState, useCallback } from "react";
-import { siteCopy } from "@/content/siteCopy";
+import { useCopy } from "@/lib/lang";
 import Button from "./Button";
 import Toast from "./Toast";
 
@@ -10,7 +10,7 @@ interface DemoFormProps {
 }
 
 export default function DemoForm({ onSuccess }: DemoFormProps) {
-  const { fields, submitLabel, successMessage } = siteCopy.demoForm;
+  const { fields, submitLabel, successMessage } = useCopy().demoForm;
   const [submitted, setSubmitted] = useState(false);
   const [toast, setToast] = useState(false);
 

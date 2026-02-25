@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { siteCopy } from "@/content/siteCopy";
+import { useCopy } from "@/lib/lang";
 import Button from "./Button";
 import Modal from "./Modal";
 import DemoForm from "./DemoForm";
 
 export default function FinalCtaSection() {
-  const { finalCta, demoForm } = siteCopy;
+  const { finalCta, demoForm } = useCopy();
   const [modalOpen, setModalOpen] = useState(false);
   const closeModal = useCallback(() => setModalOpen(false), []);
 

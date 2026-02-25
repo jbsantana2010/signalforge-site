@@ -1,8 +1,10 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 import Section from "./Section";
 
 export default function WhyDifferentSection() {
-  const { whyDifferent } = siteCopy;
+  const { whyDifferent } = useCopy();
 
   return (
     <Section

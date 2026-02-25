@@ -1,4 +1,4 @@
-export const siteCopy = {
+const en = {
   brand: {
     name: "SignalForge",
     tagline: "The AI Revenue Operating System",
@@ -276,4 +276,297 @@ export const siteCopy = {
     successMessage:
       "Thanks! We\u2019ll be in touch within one business day.",
   },
-} as const;
+};
+
+type DeepString<T> = T extends string
+  ? string
+  : T extends readonly (infer U)[]
+    ? DeepString<U>[]
+    : T extends object
+      ? { [K in keyof T]: DeepString<T[K]> }
+      : T;
+
+const es: DeepString<typeof en> = {
+  brand: {
+    name: "SignalForge",
+    tagline: "El Sistema Operativo de Ingresos con IA",
+    parent: "Un producto de Daydream Software.",
+    parentShort: "por Daydream Software",
+    domain: "signalforge.example",
+  },
+
+  nav: {
+    links: [
+      { label: "El Problema", href: "#problem" },
+      { label: "Sistema", href: "#system" },
+      { label: "Capa de IA", href: "#ai-layer" },
+      { label: "Inteligencia de Ingresos", href: "#revenue-intelligence" },
+      { label: "Plantillas", href: "#templates" },
+      { label: "Multi-Org", href: "#multi-org" },
+      { label: "Por Qu\u00e9 Nosotros", href: "#why-different" },
+    ],
+  },
+
+  hero: {
+    headline: "Tu pipeline de ingresos tiene puntos ciegos. Nosotros los eliminamos.",
+    subheadline:
+      "SignalForge es el Sistema Operativo de Ingresos con IA que conecta cada d\u00f3lar invertido con cada d\u00f3lar de ingreso \u2014 desde el primer clic hasta el cierre.",
+    body: "Los negocios de alto valor operan con herramientas fragmentadas, datos desconectados y procesos manuales que filtran ingresos en cada etapa. SignalForge reemplaza las suposiciones con un sistema \u00fanico que captura demanda, la califica con IA, automatiza el seguimiento y te muestra exactamente qu\u00e9 funciona \u2014 y qu\u00e9 no.",
+    primaryCta: "Solicitar Demo",
+    secondaryCta: "Ver C\u00f3mo Funciona",
+    secondaryCtaHref: "#system",
+  },
+
+  problem: {
+    id: "problem",
+    sectionLabel: "El Problema",
+    headline: "Est\u00e1s generando demanda. Simplemente no puedes ver a d\u00f3nde va.",
+    intro:
+      "Cada mes gastas dinero generando tr\u00e1fico. Los leads llegan por formularios, llamadas, anuncios, referidos. Y luego se dispersan.",
+    points: [
+      {
+        title: "Caen en un CRM que nadie actualiza.",
+        body: "Tu equipo de ventas escoge los mejores. El resto se enfr\u00eda. No hay un sistema que decida qui\u00e9n recibe atenci\u00f3n y cu\u00e1ndo.",
+      },
+      {
+        title: "El seguimiento es manual \u2014 o inexistente.",
+        body: "Alguien deb\u00eda devolver la llamada. Alguien deb\u00eda enviar esa cotizaci\u00f3n. El lead le compr\u00f3 a tu competidor el martes.",
+      },
+      {
+        title: "No puedes conectar el gasto con los ingresos.",
+        body: "Marketing dice que las campa\u00f1as funcionan. Ventas dice que los leads son malos. Finanzas quiere saber qu\u00e9 realmente genera ingresos. Nadie tiene la misma respuesta.",
+      },
+      {
+        title: "La atribuci\u00f3n es una suposici\u00f3n.",
+        body: "Sabes que entr\u00f3 dinero. Sabes que sali\u00f3 dinero. La l\u00ednea entre esos dos puntos es una niebla de hojas de c\u00e1lculo, dashboards desconectados e intuici\u00f3n.",
+      },
+    ],
+    closing: {
+      title: "Esto no es un problema de herramientas. Es un problema de infraestructura.",
+      body: "No necesitas otra aplicaci\u00f3n pegada al costado. Necesitas un sistema que trate los ingresos como un proceso \u00fanico y rastreable \u2014 desde el momento en que alguien entra a tu mundo hasta que paga.",
+    },
+  },
+
+  system: {
+    id: "system",
+    sectionLabel: "El Sistema SignalForge",
+    headline: "Un sistema. Cada etapa. Visibilidad total.",
+    intro:
+      "SignalForge conecta todo el ciclo de vida de ingresos en una sola capa operativa. Sin parches. Sin transferencias manuales. Sin cajas negras.",
+    steps: [
+      {
+        title: "Captura de Tr\u00e1fico",
+        body: "Cada se\u00f1al entrante \u2014 pagada, org\u00e1nica, referida, directa \u2014 es capturada, etiquetada y atribuida desde la primera interacci\u00f3n. Nada entra a tu pipeline sin una fuente.",
+      },
+      {
+        title: "Gesti\u00f3n del Embudo",
+        body: "Los leads avanzan por etapas estructuradas con criterios claros de entrada y l\u00f3gica de progresi\u00f3n. Sin m\u00e1s listas est\u00e1ticas. Sin m\u00e1s \u00ab\u00bfde d\u00f3nde vino este lead?\u00bb",
+      },
+      {
+        title: "Calificaci\u00f3n con IA",
+        body: "Cada lead recibe una puntuaci\u00f3n en tiempo real basada en comportamiento, se\u00f1ales de intenci\u00f3n y modelos configurables por industria. Las oportunidades de alto valor emergen autom\u00e1ticamente. Los leads de baja calidad se despriorizan \u2014 no se ignoran, se manejan apropiadamente.",
+      },
+      {
+        title: "Seguimiento Automatizado",
+        body: "Las secuencias se activan seg\u00fan puntuaci\u00f3n, etapa y comportamiento. El mensaje correcto llega al lead correcto en el momento correcto \u2014 sin que tu equipo persiga hojas de c\u00e1lculo.",
+      },
+      {
+        title: "Seguimiento del Pipeline",
+        body: "Todo tu pipeline es visible en una sola vista. Etapas de acuerdos, valores estimados, probabilidades de conversi\u00f3n y velocidad \u2014 todo actualizado en tiempo real.",
+      },
+      {
+        title: "Dashboard de Ingresos",
+        body: "Ve qu\u00e9 entr\u00f3, qu\u00e9 est\u00e1 en proceso y cu\u00e1nto cost\u00f3 conseguirlo. Atribuci\u00f3n a nivel de campa\u00f1a. Ingresos reales contra proyectados. El panorama completo.",
+      },
+    ],
+  },
+
+  aiLayer: {
+    id: "ai-layer",
+    sectionLabel: "La Capa de IA",
+    headline: "IA que trabaja dentro de tu proceso \u2014 no alrededor de \u00e9l.",
+    intro:
+      "SignalForge no pega IA en la superficie. Integra inteligencia directamente en la calificaci\u00f3n, el seguimiento y la estrategia de campa\u00f1as \u2014 con supervisi\u00f3n humana completa en cada punto de decisi\u00f3n.",
+    features: [
+      {
+        title: "Puntuaci\u00f3n de Leads con IA",
+        body: "Cada lead recibe una puntuaci\u00f3n din\u00e1mica basada en profundidad de engagement, patrones de comportamiento y criterios de calificaci\u00f3n relevantes a la industria. Los modelos de puntuaci\u00f3n son configurables, no una caja negra. T\u00fa defines c\u00f3mo es un buen lead. La IA aprende a encontrar m\u00e1s.",
+      },
+      {
+        title: "Estrategia de Campa\u00f1as con IA",
+        body: "SignalForge analiza datos de rendimiento en todas tus campa\u00f1as y presenta recomendaciones accionables \u2014 d\u00f3nde aumentar la inversi\u00f3n, d\u00f3nde reducir y d\u00f3nde est\u00e1n surgiendo nuevas oportunidades. No es un reporte. Es una capa estrat\u00e9gica.",
+      },
+      {
+        title: "Asistencia de Conversi\u00f3n con IA",
+        body: "Cuando un lead est\u00e1 comprometido pero no ha convertido, las secuencias impulsadas por IA adaptan el mensaje seg\u00fan el comportamiento y la trayectoria de puntuaci\u00f3n. Timing, tono y canal se optimizan continuamente. Tu equipo se enfoca en las conversaciones de mayor impacto.",
+      },
+      {
+        title: "Modelos Adaptados por Industria",
+        body: "La l\u00f3gica de puntuaci\u00f3n y calificaci\u00f3n se adapta a diferentes tipos de negocio. Las se\u00f1ales de compra de un dealer marino son diferentes a las de un contratista. SignalForge incluye plantillas configurables basadas en patrones reales \u2014 equipos, servicios, agencias, retail y m\u00e1s. Nunca empiezas de cero.",
+      },
+      {
+        title: "Control con Humano en el Ciclo",
+        body: "La IA hace recomendaciones. Los humanos toman decisiones. Cada acci\u00f3n automatizada puede ser revisada, anulada o ajustada. T\u00fa defines los l\u00edmites. El sistema opera dentro de ellos.",
+      },
+    ],
+  },
+
+  revenueIntelligence: {
+    id: "revenue-intelligence",
+    sectionLabel: "Inteligencia de Ingresos",
+    headline: "Deja de reportar actividad. Empieza a reportar ingresos.",
+    intro:
+      "La mayor\u00eda de los dashboards te muestran clics, impresiones y tasas de apertura. SignalForge te muestra lo que realmente importa: cu\u00e1ntos ingresos genera tu negocio, de d\u00f3nde vienen y cu\u00e1nto cuestan.",
+    features: [
+      {
+        title: "Ingresos Estimados",
+        body: "Cada oportunidad calificada lleva un valor proyectado basado en etapa del acuerdo, puntuaci\u00f3n y datos hist\u00f3ricos de conversi\u00f3n. Tu pipeline no es solo una lista \u2014 es un pron\u00f3stico.",
+      },
+      {
+        title: "Ingresos Reales",
+        body: "Cuando los acuerdos se cierran, los ingresos se registran y atribuyen a su fuente original. Ves exactamente qu\u00e9 campa\u00f1as, canales y secuencias generaron d\u00f3lares reales.",
+      },
+      {
+        title: "Valor del Pipeline",
+        body: "Ve el valor total del pipeline en cualquier momento, desglosado por etapa, fuente y antig\u00fcedad. Sabe qu\u00e9 est\u00e1 saludable, qu\u00e9 est\u00e1 estancado y qu\u00e9 necesita intervenci\u00f3n.",
+      },
+      {
+        title: "ROAS de Campa\u00f1as",
+        body: "Retorno sobre la inversi\u00f3n publicitaria calculado contra ingresos reales cerrados \u2014 no leads generados, no clics, no m\u00e9tricas vanidosas de \u00abmarketing calificado\u00bb. Retorno real. N\u00fameros reales.",
+      },
+      {
+        title: "Claridad en Atribuci\u00f3n",
+        body: "Atribuci\u00f3n multi-touch que conecta todo el recorrido. Primer toque, \u00faltimo toque y cada interacci\u00f3n intermedia. Sin m\u00e1s discusiones sobre qu\u00e9 campa\u00f1a \u00abfuncion\u00f3\u00bb.",
+      },
+    ],
+  },
+
+  templates: {
+    id: "templates",
+    sectionLabel: "Plantillas por Industria",
+    headline: "Construido para tu negocio. Sin atarte a un nicho.",
+    intro:
+      "SignalForge es agn\u00f3stico de industria por dise\u00f1o. Pero sabemos que un modelo de puntuaci\u00f3n \u00fanico no le sirve a nadie.",
+    body: "Por eso la plataforma incluye plantillas configurables \u2014 modelos de puntuaci\u00f3n predefinidos, esquemas de embudo y l\u00f3gica de calificaci\u00f3n basados en patrones reales de industrias de alto valor.",
+    examples: [
+      {
+        label: "Distribuidores de equipos",
+        body: "pueden implementar modelos ajustados para ciclos de venta largos y unidades de alto valor.",
+      },
+      {
+        label: "Empresas de servicios",
+        body: "pueden priorizar leads por tipo de trabajo, urgencia y geograf\u00eda.",
+      },
+      {
+        label: "Agencias",
+        body: "pueden crear configuraciones \u00fanicas para cada marca de cliente.",
+      },
+      {
+        label: "Operadores multi-ubicaci\u00f3n",
+        body: "pueden estandarizar procesos mientras se adaptan a se\u00f1ales del mercado local.",
+      },
+    ],
+    closing:
+      "Cada plantilla es un punto de partida. Ajustas los pesos, etapas y criterios para que coincidan con c\u00f3mo vende realmente tu negocio. Sin consultores. Sin marcos r\u00edgidos. Solo infraestructura configurable que se adapta.",
+  },
+
+  multiOrg: {
+    id: "multi-org",
+    sectionLabel: "Multi-Org / Marca Blanca",
+    headline: "Una plataforma. Cada marca. Control total.",
+    intro:
+      "Para agencias y operadores que gestionan m\u00faltiples negocios, SignalForge soporta arquitectura multi-organizaci\u00f3n completa con capacidad de marca blanca.",
+    features: [
+      {
+        title: "Operaciones de Agencia",
+        body: "Gestiona cada cliente desde una sola cuenta. Cada marca tiene su propio pipeline, modelo de puntuaci\u00f3n, secuencias y reportes \u2014 completamente aislados, totalmente gestionados desde un solo login.",
+      },
+      {
+        title: "Operadores Multi-Marca",
+        body: "Administra tres ubicaciones o treinta. Cada una opera independientemente con sus propios datos, embudos y dashboards. Consolida reportes para ver el panorama completo, o profundiza en cualquier entidad individual.",
+      },
+      {
+        title: "Cambio de Organizaci\u00f3n",
+        body: "Cambia entre organizaciones al instante. Sin cerrar sesi\u00f3n. Sin cuentas separadas. Una interfaz, cada marca.",
+      },
+      {
+        title: "Control de Marca",
+        body: "Personaliza la plataforma con tu identidad de marca. Dashboards, reportes y comunicaciones dirigidas a clientes llevan tu logo, tus colores y tu dominio. SignalForge permanece invisible.",
+      },
+    ],
+  },
+
+  whyDifferent: {
+    id: "why-different",
+    sectionLabel: "Por Qu\u00e9 SignalForge Es Diferente",
+    headline:
+      "Esto no es otra herramienta. Es el sistema que tus herramientas deb\u00edan ser.",
+    comparisons: [
+      {
+        title: "No es un CRM.",
+        body: "La mayor\u00eda de las bases de datos de contactos fueron construidas para almacenar registros, no para generar ingresos. Se convierten en archiveros \u2014 llenos de datos, vac\u00edos de conocimiento. SignalForge no solo guarda tus leads. Los califica, los dirige, les da seguimiento y los rastrea hasta generar ingresos.",
+      },
+      {
+        title: "No es un servicio de marketing.",
+        body: "El marketing subcontratado te da campa\u00f1as. No te da infraestructura. Cuando termina el contrato, te quedas con capturas de m\u00e9tricas y ning\u00fan sistema sobre el cual construir. SignalForge es tuyo. Los datos, el proceso, la inteligencia \u2014 se acumula con el tiempo porque pertenece a tu negocio.",
+      },
+      {
+        title: "No es una plataforma de anuncios.",
+        body: "Las plataformas de anuncios optimizan para sus propias m\u00e9tricas. Te dir\u00e1n sobre impresiones y tasas de clics. No te dir\u00e1n qu\u00e9 campa\u00f1as realmente produjeron ingresos \u2014 porque eso sucede despu\u00e9s del clic, en tu pipeline, donde no tienen visibilidad. SignalForge comienza exactamente donde ellos se detienen.",
+      },
+      {
+        title: "No es una soluci\u00f3n puntual.",
+        body: "No necesitas otra app para puntuaci\u00f3n, otra para email, otra para atribuci\u00f3n y otra para unirlas. Ese parcheo es el problema. SignalForge es una sola capa operativa dise\u00f1ada espec\u00edficamente para el trabajo: convertir demanda en ingresos con visibilidad total en cada etapa.",
+      },
+    ],
+  },
+
+  finalCta: {
+    headline: "Tus ingresos merecen infraestructura.",
+    body: "Has construido un negocio que genera demanda real. La pregunta no es si los leads est\u00e1n llegando \u2014 es si tus sistemas pueden convertirlos eficientemente, rastrearlos con precisi\u00f3n y mostrarte qu\u00e9 est\u00e1 realmente funcionando.",
+    accent: "SignalForge te da ese sistema.",
+    closing:
+      "Una plataforma. Ciclo de vida completo. Asistido por IA en cada etapa. Construido para negocios donde cada acuerdo importa.",
+    primaryCta: "Solicitar Demo",
+    secondaryCta: "Habla con Nuestro Equipo",
+  },
+
+  footer: {
+    copyright: `\u00a9 ${new Date().getFullYear()} SignalForge. Todos los derechos reservados.`,
+    parentLine: "SignalForge es un producto de Daydream Software.",
+    contactEmail: "hello@signalforge.example",
+    contactEmailNote: "(placeholder)",
+    links: [
+      { label: "Pol\u00edtica de Privacidad", href: "/privacy" },
+      { label: "T\u00e9rminos de Servicio", href: "/terms" },
+      { label: "Contacto", href: "/contact" },
+    ],
+  },
+
+  demoForm: {
+    title: "Solicitar una Demo",
+    subtitle:
+      "Cu\u00e9ntanos sobre tu negocio y te mostraremos c\u00f3mo SignalForge se adapta.",
+    fields: {
+      name: { label: "Nombre Completo", placeholder: "Mar\u00eda Garc\u00eda" },
+      email: { label: "Email de Trabajo", placeholder: "maria@empresa.com" },
+      company: { label: "Empresa", placeholder: "Acme Corp" },
+      website: {
+        label: "Sitio Web",
+        placeholder: "https://acme.com",
+      },
+      message: {
+        label: "\u00bfAlgo que debamos saber?",
+        placeholder: "Cu\u00e9ntanos sobre tu configuraci\u00f3n actual, tama\u00f1o de equipo u objetivos...",
+      },
+    },
+    submitLabel: "Enviar Solicitud",
+    successMessage:
+      "\u00a1Gracias! Nos pondremos en contacto en un d\u00eda h\u00e1bil.",
+  },
+};
+
+export type SiteCopy = DeepString<typeof en>;
+export type Lang = "en" | "es";
+
+export const siteCopy: Record<Lang, SiteCopy> = { en, es };

@@ -1,14 +1,15 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { siteCopy } from "@/content/siteCopy";
+import { useCopy } from "@/lib/lang";
 import Button from "./Button";
 import Modal from "./Modal";
 import DemoForm from "./DemoForm";
 import ProductMockup from "./ProductMockup";
 
 export default function HeroSection() {
-  const { hero, brand, demoForm } = siteCopy;
+  const copy = useCopy();
+  const { hero, brand, demoForm } = copy;
   const [modalOpen, setModalOpen] = useState(false);
   const closeModal = useCallback(() => setModalOpen(false), []);
 

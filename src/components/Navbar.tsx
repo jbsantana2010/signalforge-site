@@ -1,13 +1,18 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { siteCopy } from "@/content/siteCopy";
+import { useCopy, useLang } from "@/lib/lang";
+import type { Lang } from "@/content/siteCopy";
 import Button from "./Button";
 import Modal from "./Modal";
 import DemoForm from "./DemoForm";
 
+const langs: Lang[] = ["en", "es"];
+
 export default function Navbar() {
-  const { brand, nav, demoForm } = siteCopy;
+  const copy = useCopy();
+  const { lang, setLang } = useLang();
+  const { brand, nav, demoForm, hero } = copy;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -50,10 +55,25 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          {/* Language toggle + Desktop CTA */}
+          <div className="hidden items-center gap-4 lg:flex">
+            <div className="flex rounded-full border border-neutral-200 p-0.5 text-xs font-medium">
+              {langs.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLang(l)}
+                  className={`rounded-full px-2.5 py-1 transition-colors ${
+                    lang === l
+                      ? "bg-brand text-white"
+                      : "text-neutral-500 hover:text-neutral-900"
+                  }`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <Button onClick={openModal} className="text-sm px-5 py-2">
-              Request a Demo
+              {hero.primaryCta}
             </Button>
           </div>
 
@@ -82,6 +102,22 @@ export default function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="border-t border-neutral-200 bg-white px-6 py-4 lg:hidden">
+            {/* Mobile language toggle */}
+            <div className="mb-4 flex rounded-full border border-neutral-200 p-0.5 text-xs font-medium w-fit">
+              {langs.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLang(l)}
+                  className={`rounded-full px-2.5 py-1 transition-colors ${
+                    lang === l
+                      ? "bg-brand text-white"
+                      : "text-neutral-500 hover:text-neutral-900"
+                  }`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <ul className="space-y-3">
               {nav.links.map((link) => (
                 <li key={link.href}>
@@ -97,7 +133,7 @@ export default function Navbar() {
             </ul>
             <div className="mt-4">
               <Button onClick={openModal} className="w-full text-sm">
-                Request a Demo
+                {hero.primaryCta}
               </Button>
             </div>
           </div>

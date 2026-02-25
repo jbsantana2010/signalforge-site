@@ -1,8 +1,10 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 import Section from "./Section";
 
 export default function TemplatesSection() {
-  const { templates } = siteCopy;
+  const { templates } = useCopy();
 
   return (
     <Section

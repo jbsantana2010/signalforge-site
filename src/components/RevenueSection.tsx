@@ -1,10 +1,12 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 import Section from "./Section";
 import FeatureGrid from "./FeatureGrid";
 import KpiStrip from "./KpiStrip";
 
 export default function RevenueSection() {
-  const { revenueIntelligence: ri } = siteCopy;
+  const { revenueIntelligence: ri } = useCopy();
 
   return (
     <Section

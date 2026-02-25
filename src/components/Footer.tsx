@@ -1,7 +1,9 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 
 export default function Footer() {
-  const { brand, footer } = siteCopy;
+  const { brand, footer } = useCopy();
 
   return (
     <footer className="border-t border-neutral-200 bg-neutral-50 py-10">

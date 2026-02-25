@@ -1,9 +1,11 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 import Section from "./Section";
 import FeatureGrid from "./FeatureGrid";
 
 export default function MultiOrgSection() {
-  const { multiOrg } = siteCopy;
+  const { multiOrg } = useCopy();
 
   return (
     <Section

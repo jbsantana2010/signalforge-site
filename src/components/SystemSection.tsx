@@ -1,10 +1,12 @@
-import { siteCopy } from "@/content/siteCopy";
+"use client";
+
+import { useCopy } from "@/lib/lang";
 import Section from "./Section";
 import Stepper from "./Stepper";
 import SystemDiagram from "./SystemDiagram";
 
 export default function SystemSection() {
-  const { system } = siteCopy;
+  const { system } = useCopy();
 
   return (
     <Section
