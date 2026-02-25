@@ -297,13 +297,13 @@ const es: DeepString<typeof en> = {
 
   nav: {
     links: [
-      { label: "El Problema", href: "#problem" },
+      { label: "Problema", href: "#problem" },
       { label: "Sistema", href: "#system" },
-      { label: "Capa de IA", href: "#ai-layer" },
-      { label: "Inteligencia de Ingresos", href: "#revenue-intelligence" },
+      { label: "IA", href: "#ai-layer" },
+      { label: "Ingresos", href: "#revenue-intelligence" },
       { label: "Plantillas", href: "#templates" },
       { label: "Multi-Org", href: "#multi-org" },
-      { label: "Por Qu\u00e9 Nosotros", href: "#why-different" },
+      { label: "Por Qu\u00e9", href: "#why-different" },
     ],
   },
 
