@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import RequestDemoContent from "./RequestDemoContent";
 
 export const metadata: Metadata = {
-  title: "Request a Demo — SignalForge",
+  title: "Request a Demo — Warder",
   description:
-    "See how SignalForge connects spend to revenue. Request a personalized demo.",
+    "See how Warder connects spend to revenue. Request a personalized demo.",
 };
 
 export default function RequestDemoPage() {

@@ -3,7 +3,7 @@ export default function ProductMockup() {
     <div
       className="rounded-xl border border-neutral-200 bg-white shadow-xl shadow-neutral-200/60 overflow-hidden"
       role="img"
-      aria-label="SignalForge dashboard preview showing KPIs, pipeline stages, and campaign performance"
+      aria-label="Warder dashboard preview showing KPIs, pipeline stages, and campaign performance"
     >
       {/* Title bar */}
       <div className="flex items-center gap-2 border-b border-neutral-100 bg-neutral-50 px-4 py-2.5">
@@ -11,7 +11,7 @@ export default function ProductMockup() {
         <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" aria-hidden="true" />
         <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" aria-hidden="true" />
         <span className="ml-3 text-xs font-medium text-neutral-400">
-          SignalForge &mdash; Revenue Dashboard
+          Warder &mdash; Revenue Dashboard
         </span>
       </div>
 

@@ -14,19 +14,19 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const title = "SignalForge \u2014 AI Revenue Operating System";
+const title = "Warder \u2014 The AI Revenue Operating System";
 const description =
-  "SignalForge connects spend to revenue from first click to closed deal \u2014 lead capture, AI qualification, automated follow-up, and revenue intelligence.";
+  "Warder connects every dollar of spend to every dollar of revenue \u2014 from first click to closed deal.";
 
 export const metadata: Metadata = {
   title,
   description,
-  metadataBase: new URL("https://signalforge.example"),
+  metadataBase: new URL("https://warderai.com"),
   openGraph: {
     title,
     description,
-    url: "https://signalforge.example",
-    siteName: "SignalForge",
+    url: "https://warderai.com",
+    siteName: "Warder",
     type: "website",
     locale: "en_US",
   },

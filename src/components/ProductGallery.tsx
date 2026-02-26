@@ -1,3 +1,7 @@
+"use client";
+
+import { useCopy } from "@/lib/lang";
+
 const screens = [
   {
     title: "Lead Detail + AI Score",
@@ -112,17 +116,18 @@ const screens = [
 ];
 
 export default function ProductGallery() {
+  const copy = useCopy();
   return (
     <section className="bg-neutral-50 py-20 md:py-28">
       <div className="mx-auto max-w-5xl px-6">
         <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-brand">
-          Inside the Platform
+          {copy.productGallery.eyebrow}
         </p>
         <h2 className="text-3xl font-bold tracking-tight text-neutral-900 md:text-4xl text-balance">
-          See what your team actually uses.
+          {copy.productGallery.title}
         </h2>
         <p className="mt-4 max-w-3xl text-lg leading-relaxed text-neutral-600">
-          Every screen is built for clarity. Score a lead, attribute a campaign, or trace an automation — all from one system.
+          {copy.productGallery.subtitle}
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

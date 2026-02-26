@@ -1,10 +1,10 @@
 const en = {
   brand: {
-    name: "SignalForge",
+    name: "Warder",
     tagline: "The AI Revenue Operating System",
     parent: "A Daydream Software product.",
     parentShort: "by Daydream Software",
-    domain: "signalforge.example",
+    domain: "warderai.com",
   },
 
   nav: {
@@ -22,8 +22,8 @@ const en = {
   hero: {
     headline: "Your revenue pipeline has blind spots. We eliminate them.",
     subheadline:
-      "SignalForge is the AI Revenue Operating System that connects every dollar of spend to every dollar of revenue \u2014 from first click to closed deal.",
-    body: "High-ticket businesses run on fragmented tools, disconnected data, and manual processes that leak revenue at every stage. SignalForge replaces the guesswork with a single system that captures demand, qualifies it with AI, automates follow-up, and shows you exactly what\u2019s working \u2014 and what isn\u2019t.",
+      "Warder is the AI Revenue Operating System that connects every dollar of spend to every dollar of revenue \u2014 from first click to closed deal.",
+    body: "High-ticket businesses run on fragmented tools, disconnected data, and manual processes that leak revenue at every stage. Warder replaces the guesswork with a single system that captures demand, qualifies it with AI, automates follow-up, and shows you exactly what\u2019s working \u2014 and what isn\u2019t.",
     primaryCta: "Request a Demo",
     secondaryCta: "See How It Works",
     secondaryCtaHref: "#system",
@@ -61,10 +61,10 @@ const en = {
 
   system: {
     id: "system",
-    sectionLabel: "The SignalForge System",
+    sectionLabel: "The Warder System",
     headline: "One system. Every stage. Full visibility.",
     intro:
-      "SignalForge connects the entire revenue lifecycle into a single operating layer. No duct tape. No manual handoffs. No black boxes.",
+      "Warder connects the entire revenue lifecycle into a single operating layer. No duct tape. No manual handoffs. No black boxes.",
     steps: [
       {
         title: "Traffic Capture",
@@ -98,7 +98,7 @@ const en = {
     sectionLabel: "The AI Layer",
     headline: "AI that works inside your process \u2014 not around it.",
     intro:
-      "SignalForge doesn\u2019t bolt AI onto the surface. It embeds intelligence directly into qualification, follow-up, and campaign strategy \u2014 with full human oversight at every decision point.",
+      "Warder doesn\u2019t bolt AI onto the surface. It embeds intelligence directly into qualification, follow-up, and campaign strategy \u2014 with full human oversight at every decision point.",
     features: [
       {
         title: "AI Lead Scoring",
@@ -106,7 +106,7 @@ const en = {
       },
       {
         title: "AI Campaign Strategy",
-        body: "SignalForge analyzes performance data across your campaigns and surfaces actionable recommendations \u2014 where to increase spend, where to pull back, and where new opportunities are emerging. Not a report. A strategy layer.",
+        body: "Warder analyzes performance data across your campaigns and surfaces actionable recommendations \u2014 where to increase spend, where to pull back, and where new opportunities are emerging. Not a report. A strategy layer.",
       },
       {
         title: "AI Conversion Assist",
@@ -114,7 +114,7 @@ const en = {
       },
       {
         title: "Industry-Aware Models",
-        body: "Scoring and qualification logic adapts to different business types. A marine dealer\u2019s buying signals are different from a contractor\u2019s. SignalForge ships with configurable templates built from real-world patterns \u2014 equipment, services, agencies, retail, and more. You\u2019re never starting from zero.",
+        body: "Scoring and qualification logic adapts to different business types. A marine dealer\u2019s buying signals are different from a contractor\u2019s. Warder ships with configurable templates built from real-world patterns \u2014 equipment, services, agencies, retail, and more. You\u2019re never starting from zero.",
       },
       {
         title: "Human-in-the-Loop Control",
@@ -128,7 +128,7 @@ const en = {
     sectionLabel: "Revenue Intelligence",
     headline: "Stop reporting on activity. Start reporting on revenue.",
     intro:
-      "Most dashboards show you clicks, impressions, and open rates. SignalForge shows you what actually matters: how much revenue your business is generating, where it\u2019s coming from, and what it costs.",
+      "Most dashboards show you clicks, impressions, and open rates. Warder shows you what actually matters: how much revenue your business is generating, where it\u2019s coming from, and what it costs.",
     features: [
       {
         title: "Estimated Revenue",
@@ -158,7 +158,7 @@ const en = {
     sectionLabel: "Industry Templates",
     headline: "Built for your business. Not locked to a niche.",
     intro:
-      "SignalForge is industry-agnostic by design. But we know that a one-size-fits-all scoring model helps no one.",
+      "Warder is industry-agnostic by design. But we know that a one-size-fits-all scoring model helps no one.",
     body: "That\u2019s why the platform ships with configurable templates \u2014 pre-built scoring models, funnel schemas, and qualification logic informed by real patterns across high-ticket industries.",
     examples: [
       {
@@ -187,7 +187,7 @@ const en = {
     sectionLabel: "Multi-Org / White Label",
     headline: "One platform. Every brand. Complete control.",
     intro:
-      "For agencies and operators managing multiple businesses, SignalForge supports full multi-organization architecture with white-label capability.",
+      "For agencies and operators managing multiple businesses, Warder supports full multi-organization architecture with white-label capability.",
     features: [
       {
         title: "Agency Operations",
@@ -203,32 +203,32 @@ const en = {
       },
       {
         title: "Branding Control",
-        body: "White-label the platform with your brand identity. Client-facing dashboards, reports, and communications carry your logo, your colors, and your domain. SignalForge stays invisible.",
+        body: "White-label the platform with your brand identity. Client-facing dashboards, reports, and communications carry your logo, your colors, and your domain. Warder stays invisible.",
       },
     ],
   },
 
   whyDifferent: {
     id: "why-different",
-    sectionLabel: "Why SignalForge Is Different",
+    sectionLabel: "Why Warder Is Different",
     headline:
       "This isn\u2019t another tool. It\u2019s the system your tools were supposed to be.",
     comparisons: [
       {
         title: "It\u2019s not a CRM.",
-        body: "Most contact databases were built to store records, not drive revenue. They become filing cabinets \u2014 full of data, empty of insight. SignalForge doesn\u2019t just hold your leads. It qualifies them, routes them, follows up with them, and tracks them to revenue.",
+        body: "Most contact databases were built to store records, not drive revenue. They become filing cabinets \u2014 full of data, empty of insight. Warder doesn\u2019t just hold your leads. It qualifies them, routes them, follows up with them, and tracks them to revenue.",
       },
       {
         title: "It\u2019s not a marketing service.",
-        body: "Outsourced marketing gets you campaigns. It doesn\u2019t get you infrastructure. When the engagement ends, you\u2019re left with screenshots of metrics and no system to build on. SignalForge is yours. The data, the process, the intelligence \u2014 it compounds over time because it belongs to your business.",
+        body: "Outsourced marketing gets you campaigns. It doesn\u2019t get you infrastructure. When the engagement ends, you\u2019re left with screenshots of metrics and no system to build on. Warder is yours. The data, the process, the intelligence \u2014 it compounds over time because it belongs to your business.",
       },
       {
         title: "It\u2019s not an ad platform.",
-        body: "Ad platforms optimize for their own metrics. They\u2019ll tell you about impressions and click-through rates. They won\u2019t tell you which campaigns actually produced revenue \u2014 because that happens after the click, in your pipeline, where they have no visibility. SignalForge picks up exactly where they stop.",
+        body: "Ad platforms optimize for their own metrics. They\u2019ll tell you about impressions and click-through rates. They won\u2019t tell you which campaigns actually produced revenue \u2014 because that happens after the click, in your pipeline, where they have no visibility. Warder picks up exactly where they stop.",
       },
       {
         title: "It\u2019s not a point solution.",
-        body: "You don\u2019t need another app for scoring, another for email, another for attribution, and another to tie them together. That patchwork is the problem. SignalForge is a single operating layer purpose-built for the job: turning demand into revenue with full visibility at every stage.",
+        body: "You don\u2019t need another app for scoring, another for email, another for attribution, and another to tie them together. That patchwork is the problem. Warder is a single operating layer purpose-built for the job: turning demand into revenue with full visibility at every stage.",
       },
     ],
   },
@@ -236,7 +236,7 @@ const en = {
   finalCta: {
     headline: "Your revenue deserves infrastructure.",
     body: "You\u2019ve built a business that generates real demand. The question isn\u2019t whether leads are coming in \u2014 it\u2019s whether your systems can convert them efficiently, track them accurately, and show you what\u2019s actually working.",
-    accent: "SignalForge gives you that system.",
+    accent: "Warder gives you that system.",
     closing:
       "One platform. Full lifecycle. AI-assisted at every stage. Built for businesses where every deal matters.",
     primaryCta: "Request a Demo",
@@ -244,9 +244,9 @@ const en = {
   },
 
   footer: {
-    copyright: `\u00a9 ${new Date().getFullYear()} SignalForge. All rights reserved.`,
-    parentLine: "SignalForge is a product of Daydream Software.",
-    contactEmail: "hello@signalforge.example",
+    copyright: `\u00a9 ${new Date().getFullYear()} Warder. All rights reserved.`,
+    parentLine: "Warder is a product of Daydream Software.",
+    contactEmail: "hello@warderai.com",
     contactEmailNote: "(placeholder)",
     links: [
       { label: "Privacy Policy", href: "/privacy" },
@@ -255,10 +255,17 @@ const en = {
     ],
   },
 
+  productGallery: {
+    eyebrow: "Inside the Platform",
+    title: "See what your team actually uses.",
+    subtitle:
+      "Every screen is built for clarity. Score a lead, attribute a campaign, or trace an automation \u2014 all from one system.",
+  },
+
   demoForm: {
     title: "Request a Demo",
     subtitle:
-      "Tell us about your business and we\u2019ll show you how SignalForge fits.",
+      "Tell us about your business and we\u2019ll show you how Warder fits.",
     fields: {
       name: { label: "Full Name", placeholder: "Jane Smith" },
       email: { label: "Work Email", placeholder: "jane@company.com" },
@@ -288,11 +295,11 @@ type DeepString<T> = T extends string
 
 const es: DeepString<typeof en> = {
   brand: {
-    name: "SignalForge",
+    name: "Warder",
     tagline: "El Sistema Operativo de Ingresos con IA",
     parent: "Un producto de Daydream Software.",
     parentShort: "por Daydream Software",
-    domain: "signalforge.example",
+    domain: "warderai.com",
   },
 
   nav: {
@@ -310,8 +317,8 @@ const es: DeepString<typeof en> = {
   hero: {
     headline: "Tu pipeline de ingresos tiene puntos ciegos. Nosotros los eliminamos.",
     subheadline:
-      "SignalForge es el Sistema Operativo de Ingresos con IA que conecta cada d\u00f3lar invertido con cada d\u00f3lar de ingreso \u2014 desde el primer clic hasta el cierre.",
-    body: "Los negocios de alto valor operan con herramientas fragmentadas, datos desconectados y procesos manuales que filtran ingresos en cada etapa. SignalForge reemplaza las suposiciones con un sistema \u00fanico que captura demanda, la califica con IA, automatiza el seguimiento y te muestra exactamente qu\u00e9 funciona \u2014 y qu\u00e9 no.",
+      "Warder es el Sistema Operativo de Ingresos con IA que conecta cada d\u00f3lar invertido con cada d\u00f3lar de ingreso \u2014 desde el primer clic hasta el cierre.",
+    body: "Los negocios de alto valor operan con herramientas fragmentadas, datos desconectados y procesos manuales que filtran ingresos en cada etapa. Warder reemplaza las suposiciones con un sistema \u00fanico que captura demanda, la califica con IA, automatiza el seguimiento y te muestra exactamente qu\u00e9 funciona \u2014 y qu\u00e9 no.",
     primaryCta: "Solicitar Demo",
     secondaryCta: "Ver C\u00f3mo Funciona",
     secondaryCtaHref: "#system",
@@ -349,10 +356,10 @@ const es: DeepString<typeof en> = {
 
   system: {
     id: "system",
-    sectionLabel: "El Sistema SignalForge",
+    sectionLabel: "El Sistema Warder",
     headline: "Un sistema. Cada etapa. Visibilidad total.",
     intro:
-      "SignalForge conecta todo el ciclo de vida de ingresos en una sola capa operativa. Sin parches. Sin transferencias manuales. Sin cajas negras.",
+      "Warder conecta todo el ciclo de vida de ingresos en una sola capa operativa. Sin parches. Sin transferencias manuales. Sin cajas negras.",
     steps: [
       {
         title: "Captura de Tr\u00e1fico",
@@ -386,7 +393,7 @@ const es: DeepString<typeof en> = {
     sectionLabel: "La Capa de IA",
     headline: "IA que trabaja dentro de tu proceso \u2014 no alrededor de \u00e9l.",
     intro:
-      "SignalForge no pega IA en la superficie. Integra inteligencia directamente en la calificaci\u00f3n, el seguimiento y la estrategia de campa\u00f1as \u2014 con supervisi\u00f3n humana completa en cada punto de decisi\u00f3n.",
+      "Warder no pega IA en la superficie. Integra inteligencia directamente en la calificaci\u00f3n, el seguimiento y la estrategia de campa\u00f1as \u2014 con supervisi\u00f3n humana completa en cada punto de decisi\u00f3n.",
     features: [
       {
         title: "Puntuaci\u00f3n de Leads con IA",
@@ -394,7 +401,7 @@ const es: DeepString<typeof en> = {
       },
       {
         title: "Estrategia de Campa\u00f1as con IA",
-        body: "SignalForge analiza datos de rendimiento en todas tus campa\u00f1as y presenta recomendaciones accionables \u2014 d\u00f3nde aumentar la inversi\u00f3n, d\u00f3nde reducir y d\u00f3nde est\u00e1n surgiendo nuevas oportunidades. No es un reporte. Es una capa estrat\u00e9gica.",
+        body: "Warder analiza datos de rendimiento en todas tus campa\u00f1as y presenta recomendaciones accionables \u2014 d\u00f3nde aumentar la inversi\u00f3n, d\u00f3nde reducir y d\u00f3nde est\u00e1n surgiendo nuevas oportunidades. No es un reporte. Es una capa estrat\u00e9gica.",
       },
       {
         title: "Asistencia de Conversi\u00f3n con IA",
@@ -402,7 +409,7 @@ const es: DeepString<typeof en> = {
       },
       {
         title: "Modelos Adaptados por Industria",
-        body: "La l\u00f3gica de puntuaci\u00f3n y calificaci\u00f3n se adapta a diferentes tipos de negocio. Las se\u00f1ales de compra de un dealer marino son diferentes a las de un contratista. SignalForge incluye plantillas configurables basadas en patrones reales \u2014 equipos, servicios, agencias, retail y m\u00e1s. Nunca empiezas de cero.",
+        body: "La l\u00f3gica de puntuaci\u00f3n y calificaci\u00f3n se adapta a diferentes tipos de negocio. Las se\u00f1ales de compra de un dealer marino son diferentes a las de un contratista. Warder incluye plantillas configurables basadas en patrones reales \u2014 equipos, servicios, agencias, retail y m\u00e1s. Nunca empiezas de cero.",
       },
       {
         title: "Control con Humano en el Ciclo",
@@ -416,7 +423,7 @@ const es: DeepString<typeof en> = {
     sectionLabel: "Inteligencia de Ingresos",
     headline: "Deja de reportar actividad. Empieza a reportar ingresos.",
     intro:
-      "La mayor\u00eda de los dashboards te muestran clics, impresiones y tasas de apertura. SignalForge te muestra lo que realmente importa: cu\u00e1ntos ingresos genera tu negocio, de d\u00f3nde vienen y cu\u00e1nto cuestan.",
+      "La mayor\u00eda de los dashboards te muestran clics, impresiones y tasas de apertura. Warder te muestra lo que realmente importa: cu\u00e1ntos ingresos genera tu negocio, de d\u00f3nde vienen y cu\u00e1nto cuestan.",
     features: [
       {
         title: "Ingresos Estimados",
@@ -446,7 +453,7 @@ const es: DeepString<typeof en> = {
     sectionLabel: "Plantillas por Industria",
     headline: "Construido para tu negocio. Sin atarte a un nicho.",
     intro:
-      "SignalForge es agn\u00f3stico de industria por dise\u00f1o. Pero sabemos que un modelo de puntuaci\u00f3n \u00fanico no le sirve a nadie.",
+      "Warder es agn\u00f3stico de industria por dise\u00f1o. Pero sabemos que un modelo de puntuaci\u00f3n \u00fanico no le sirve a nadie.",
     body: "Por eso la plataforma incluye plantillas configurables \u2014 modelos de puntuaci\u00f3n predefinidos, esquemas de embudo y l\u00f3gica de calificaci\u00f3n basados en patrones reales de industrias de alto valor.",
     examples: [
       {
@@ -475,7 +482,7 @@ const es: DeepString<typeof en> = {
     sectionLabel: "Multi-Org / Marca Blanca",
     headline: "Una plataforma. Cada marca. Control total.",
     intro:
-      "Para agencias y operadores que gestionan m\u00faltiples negocios, SignalForge soporta arquitectura multi-organizaci\u00f3n completa con capacidad de marca blanca.",
+      "Para agencias y operadores que gestionan m\u00faltiples negocios, Warder soporta arquitectura multi-organizaci\u00f3n completa con capacidad de marca blanca.",
     features: [
       {
         title: "Operaciones de Agencia",
@@ -491,32 +498,32 @@ const es: DeepString<typeof en> = {
       },
       {
         title: "Control de Marca",
-        body: "Personaliza la plataforma con tu identidad de marca. Dashboards, reportes y comunicaciones dirigidas a clientes llevan tu logo, tus colores y tu dominio. SignalForge permanece invisible.",
+        body: "Personaliza la plataforma con tu identidad de marca. Dashboards, reportes y comunicaciones dirigidas a clientes llevan tu logo, tus colores y tu dominio. Warder permanece invisible.",
       },
     ],
   },
 
   whyDifferent: {
     id: "why-different",
-    sectionLabel: "Por Qu\u00e9 SignalForge Es Diferente",
+    sectionLabel: "Por Qu\u00e9 Warder Es Diferente",
     headline:
       "Esto no es otra herramienta. Es el sistema que tus herramientas deb\u00edan ser.",
     comparisons: [
       {
         title: "No es un CRM.",
-        body: "La mayor\u00eda de las bases de datos de contactos fueron construidas para almacenar registros, no para generar ingresos. Se convierten en archiveros \u2014 llenos de datos, vac\u00edos de conocimiento. SignalForge no solo guarda tus leads. Los califica, los dirige, les da seguimiento y los rastrea hasta generar ingresos.",
+        body: "La mayor\u00eda de las bases de datos de contactos fueron construidas para almacenar registros, no para generar ingresos. Se convierten en archiveros \u2014 llenos de datos, vac\u00edos de conocimiento. Warder no solo guarda tus leads. Los califica, los dirige, les da seguimiento y los rastrea hasta generar ingresos.",
       },
       {
         title: "No es un servicio de marketing.",
-        body: "El marketing subcontratado te da campa\u00f1as. No te da infraestructura. Cuando termina el contrato, te quedas con capturas de m\u00e9tricas y ning\u00fan sistema sobre el cual construir. SignalForge es tuyo. Los datos, el proceso, la inteligencia \u2014 se acumula con el tiempo porque pertenece a tu negocio.",
+        body: "El marketing subcontratado te da campa\u00f1as. No te da infraestructura. Cuando termina el contrato, te quedas con capturas de m\u00e9tricas y ning\u00fan sistema sobre el cual construir. Warder es tuyo. Los datos, el proceso, la inteligencia \u2014 se acumula con el tiempo porque pertenece a tu negocio.",
       },
       {
         title: "No es una plataforma de anuncios.",
-        body: "Las plataformas de anuncios optimizan para sus propias m\u00e9tricas. Te dir\u00e1n sobre impresiones y tasas de clics. No te dir\u00e1n qu\u00e9 campa\u00f1as realmente produjeron ingresos \u2014 porque eso sucede despu\u00e9s del clic, en tu pipeline, donde no tienen visibilidad. SignalForge comienza exactamente donde ellos se detienen.",
+        body: "Las plataformas de anuncios optimizan para sus propias m\u00e9tricas. Te dir\u00e1n sobre impresiones y tasas de clics. No te dir\u00e1n qu\u00e9 campa\u00f1as realmente produjeron ingresos \u2014 porque eso sucede despu\u00e9s del clic, en tu pipeline, donde no tienen visibilidad. Warder comienza exactamente donde ellos se detienen.",
       },
       {
         title: "No es una soluci\u00f3n puntual.",
-        body: "No necesitas otra app para puntuaci\u00f3n, otra para email, otra para atribuci\u00f3n y otra para unirlas. Ese parcheo es el problema. SignalForge es una sola capa operativa dise\u00f1ada espec\u00edficamente para el trabajo: convertir demanda en ingresos con visibilidad total en cada etapa.",
+        body: "No necesitas otra app para puntuaci\u00f3n, otra para email, otra para atribuci\u00f3n y otra para unirlas. Ese parcheo es el problema. Warder es una sola capa operativa dise\u00f1ada espec\u00edficamente para el trabajo: convertir demanda en ingresos con visibilidad total en cada etapa.",
       },
     ],
   },
@@ -524,7 +531,7 @@ const es: DeepString<typeof en> = {
   finalCta: {
     headline: "Tus ingresos merecen infraestructura.",
     body: "Has construido un negocio que genera demanda real. La pregunta no es si los leads est\u00e1n llegando \u2014 es si tus sistemas pueden convertirlos eficientemente, rastrearlos con precisi\u00f3n y mostrarte qu\u00e9 est\u00e1 realmente funcionando.",
-    accent: "SignalForge te da ese sistema.",
+    accent: "Warder te da ese sistema.",
     closing:
       "Una plataforma. Ciclo de vida completo. Asistido por IA en cada etapa. Construido para negocios donde cada acuerdo importa.",
     primaryCta: "Solicitar Demo",
@@ -532,9 +539,9 @@ const es: DeepString<typeof en> = {
   },
 
   footer: {
-    copyright: `\u00a9 ${new Date().getFullYear()} SignalForge. Todos los derechos reservados.`,
-    parentLine: "SignalForge es un producto de Daydream Software.",
-    contactEmail: "hello@signalforge.example",
+    copyright: `\u00a9 ${new Date().getFullYear()} Warder. Todos los derechos reservados.`,
+    parentLine: "Warder es un producto de Daydream Software.",
+    contactEmail: "hello@warderai.com",
     contactEmailNote: "(placeholder)",
     links: [
       { label: "Pol\u00edtica de Privacidad", href: "/privacy" },
@@ -543,10 +550,17 @@ const es: DeepString<typeof en> = {
     ],
   },
 
+  productGallery: {
+    eyebrow: "Dentro de la plataforma",
+    title: "Mira lo que tu equipo realmente usa.",
+    subtitle:
+      "Cada pantalla est\u00e1 dise\u00f1ada para claridad. Punt\u00faa un lead, atribuye una campa\u00f1a o rastrea una automatizaci\u00f3n \u2014 todo desde un solo sistema.",
+  },
+
   demoForm: {
     title: "Solicitar una Demo",
     subtitle:
-      "Cu\u00e9ntanos sobre tu negocio y te mostraremos c\u00f3mo SignalForge se adapta.",
+      "Cu\u00e9ntanos sobre tu negocio y te mostraremos c\u00f3mo Warder se adapta.",
     fields: {
       name: { label: "Nombre Completo", placeholder: "Mar\u00eda Garc\u00eda" },
       email: { label: "Email de Trabajo", placeholder: "maria@empresa.com" },
