@@ -1,5 +1,32 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Lead Form — Environment Variables
+
+The "Request a Demo" form posts to a 3rd-party form backend. Configure the following before deploying:
+
+| Variable | Required | Description |
+|---|---|---|
+| `NEXT_PUBLIC_LEAD_FORM_ENDPOINT` | **Yes** | Full URL of your form endpoint, e.g. `https://formspree.io/f/xxxx` or `https://usebasin.com/f/xxxx` |
+| `NEXT_PUBLIC_LEAD_FORM_PROVIDER` | No | `formspree` (default) or `basin` |
+
+### Local setup
+
+1. Copy the example file:
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Fill in your endpoint URL in `.env.local`.
+3. Run `npm run dev` and submit the form — check your form provider's dashboard for the submission.
+
+> **If `NEXT_PUBLIC_LEAD_FORM_ENDPOINT` is missing in development**, the form will show an inline error message so you know it's unconfigured. In production it fails silently with a friendly success message to avoid confusing visitors.
+
+### Payload fields sent on every submission
+
+```
+name, email, company, website, message,
+to_email, lang, page, referrer, userAgent, timestamp
+```
+
 ## Getting Started
 
 First, run the development server:

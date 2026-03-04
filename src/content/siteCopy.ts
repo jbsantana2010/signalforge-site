@@ -280,8 +280,13 @@ const en = {
       },
     },
     submitLabel: "Submit Request",
+    submittingLabel: "Submitting\u2026",
+    successTitle: "We got it!",
     successMessage:
       "Thanks! We\u2019ll be in touch within one business day.",
+    errorTitle: "Something went wrong.",
+    errorBody:
+      "Please try again or email us at hello@warderai.com.",
   },
 };
 
@@ -575,8 +580,13 @@ const es: DeepString<typeof en> = {
       },
     },
     submitLabel: "Enviar Solicitud",
+    submittingLabel: "Enviando\u2026",
+    successTitle: "\u00a1Lo recibimos!",
     successMessage:
       "\u00a1Gracias! Nos pondremos en contacto en un d\u00eda h\u00e1bil.",
+    errorTitle: "Algo sali\u00f3 mal.",
+    errorBody:
+      "Por favor intenta de nuevo o esc\u00edbenos a hello@warderai.com.",
   },
 };
 
