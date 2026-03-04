@@ -247,7 +247,7 @@ const en = {
     copyright: `\u00a9 ${new Date().getFullYear()} Warder. All rights reserved.`,
     parentLine: "Warder is a product of Daydream Software.",
     contactEmail: "hello@warderai.com",
-    contactEmailNote: "(placeholder)",
+    contactEmailNote: "",
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
@@ -542,7 +542,7 @@ const es: DeepString<typeof en> = {
     copyright: `\u00a9 ${new Date().getFullYear()} Warder. Todos los derechos reservados.`,
     parentLine: "Warder es un producto de Daydream Software.",
     contactEmail: "hello@warderai.com",
-    contactEmailNote: "(placeholder)",
+    contactEmailNote: "",
     links: [
       { label: "Pol\u00edtica de Privacidad", href: "/privacy" },
       { label: "T\u00e9rminos de Servicio", href: "/terms" },

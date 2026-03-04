@@ -17,7 +17,7 @@ export default function DemoForm({ onSuccess }: DemoFormProps) {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.currentTarget));
-    console.log("Demo request submitted:", data);
+    console.log("Demo request submitted (→ hello@warderai.com):", data);
     setSubmitted(true);
     setToast(true);
     onSuccess?.();
