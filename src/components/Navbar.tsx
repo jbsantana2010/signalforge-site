@@ -61,7 +61,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className="flex shrink-0 items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-white text-sm font-black">
-              SF
+              W
             </span>
             <span className="flex flex-col leading-tight">
               <span className="text-lg font-bold text-neutral-900">{brand.name}</span>
